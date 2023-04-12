@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+    <title>Login</title>
+</head>
+<body>
+    <div class="container-form">
+        <header>
+            <img src="images/logo.svg" alt="">
+        </header>
+        <div class="card-form"> 
+            <form action="">
+                
+                <legend>
+                    <div class="title-form">
+                        <img src="images/log-in.svg" alt="logo-in">
+                        <h1>Faça seu login</h1>
+                    </div>
+                        <span>Entre com suas informações de cadastro</span>
+                </legend>
+
+                <label for="email">
+                    <span>E-mail</span>
+                    <input  onkeyup="check()" type="email" name="email" id="email" placeholder="Digite seu email" required inputmode="email">
+                </label>
+
+                <label for="password" >
+                    <span class="senha">Senha</span>
+                    <input type="password" name="password" id="password" placeholder="Digite sua senha " inputmode="numeric" minlength="4" maxlength="8" required pattern="[0-9]{4,8}" title="Por favor, digite sua senha com até 8 digitos numéricos" >
+                </label>
+
+                <label for="checkbox">
+                    <input type="checkbox" id="checkbox">
+                    <span>Lembre-me</span>
+                    <div class="link-checkbox">
+                        <a href="#">Esqueci minha senha </a>
+                    </div>
+                </label>
+
+                <button type="submit">Entrar</button>
+                <span>Não tem uma conta? <a href="#"><strong>Registre-se</strong></a></span>
+            </form>
+            
+        </div>
+    </div>
+
+    <div class="container-img"></div>
+</body>
+</html>
